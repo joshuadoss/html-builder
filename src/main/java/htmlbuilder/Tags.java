@@ -10,6 +10,6 @@ package htmlbuilder;
  * @author Joshua Doss
  * @version 1.0
  */
-public class HTMLBuilder {
+public class Tags {
 	
 }
