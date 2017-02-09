@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2012 Joshua Doss. All rights reserved.
+ * Copyright (c) 2017 Joshua Doss. All rights reserved.
  */
 
 package htmlbuilder.node;
@@ -16,7 +16,6 @@ public class Text extends AtypicalNode {
 	
 	public Text(String text) {
 		this.text = text;
-		
 	}
 
 	public String toString() {
