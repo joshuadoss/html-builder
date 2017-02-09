@@ -45,4 +45,8 @@ public abstract class AtypicalNode implements Node {
 		// NOOP
 		return this;
 	}
+
+	public void render() {
+		System.out.println(this.toString());
+	}
 }

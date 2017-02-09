@@ -40,4 +40,9 @@ public interface Node {
 	 * @return
 	 */
 	public Node attr(String key, String value);
+	
+	/**
+	 * 
+	 */
+	public void render();
 }

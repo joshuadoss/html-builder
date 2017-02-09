@@ -88,4 +88,8 @@ public class AbstractNode implements Node {
 		
 		return sb.toString();
 	}
+
+	public void render() {
+		System.out.println(this.toString());
+	}
 }
