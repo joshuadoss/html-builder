@@ -23,6 +23,14 @@ public abstract class AtypicalNode implements Node {
 	}
 
 	/* (non-Javadoc)
+	 * @see htmlbuilder.Node#child(java.lang.String)
+	 */
+	public Node child(String text) {
+		// NOOP
+		return this;
+	}
+
+	/* (non-Javadoc)
 	 * @see htmlbuilder.Node#id(java.lang.String)
 	 */
 	public Node id(String id) {
@@ -45,8 +53,19 @@ public abstract class AtypicalNode implements Node {
 		// NOOP
 		return this;
 	}
-
+	
+	/* (non-Javadoc)
+	 * @see htmlbuilder.Node#render()
+	 */
 	public void render() {
 		System.out.println(this.toString());
+	}
+
+	/* (non-Javadoc)
+	 * @see htmlbuilder.Node#style(java.lang.String)
+	 */
+	public Node style(String style) {
+		// NOOP
+		return this;
 	}
 }

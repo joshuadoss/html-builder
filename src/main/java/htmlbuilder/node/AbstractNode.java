@@ -38,6 +38,11 @@ public class AbstractNode implements Node {
 		return this;
 	}
 
+	public Node child(String text) {
+		this.children.add(new Text(text));
+		return this;
+	}
+	
 	public Node id(String id) {
 		this.attributes.put(ID, id);
 		return this;
@@ -89,7 +94,18 @@ public class AbstractNode implements Node {
 		return sb.toString();
 	}
 
+	/* (non-Javadoc)
+	 * @see htmlbuilder.Node#render()
+	 */
 	public void render() {
 		System.out.println(this.toString());
+	}
+
+	/* (non-Javadoc)
+	 * @see htmlbuilder.Node#style(java.lang.String)
+	 */
+	public Node style(String style) {
+		this.attr("style", style);
+		return this;
 	}
 }
